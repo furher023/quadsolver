@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/master"
+        >
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:paddingTop="68dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="32dp">
+
+        <EditText
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/a"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/b"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/c"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="32sp"
+
+            />
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equal"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Roots_are"
+            android:textSize="32sp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+
+        <TextView
+            android:id="@+id/root_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a4c639"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/root_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a4c620"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff"
+        android:ellipsize="none"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="calc"
+        android:text="@string/Calculate"
+        android:visibility="visible"
+        android:layout_below="@+id/master"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#a4c639"
+        android:padding="16dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

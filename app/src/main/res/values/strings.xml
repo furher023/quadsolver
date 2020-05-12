@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quad Solver</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="x2">x<sup>2</sup></string>
+    <string name="x">x</string>
+    <string name="equal">= 0</string>
+    <string name="Calculate">Calculate</string>
+    <string name="Roots_are">Roots are:</string>
+
+</resources>

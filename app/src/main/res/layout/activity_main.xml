@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="32dp">
+        <EditText
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/a"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+        <EditText
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/b"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x"
+            android:textSize="32sp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+
+        <EditText
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/c"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equal"
+            android:textSize="32sp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_1"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff"
+        android:ellipsize="none"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="calc"
+        android:text="@string/Calculate"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#a4c639"
+        android:padding="16dp"
+
+        />
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="32dp"
+        android:layout_below="@+id/start"
+        android:textSize="32sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/root_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/root_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="32sp" />
+    </LinearLayout>
+</RelativeLayout>
